@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { FunctionComponent, PropsWithChildren } from "react"
+import { Navbar } from "../ui";
 
 interface Props {
   title: string;
@@ -23,7 +24,7 @@ export const ShopLayout: FunctionComponent<PropsWithChildren<Props>> = ({ childr
       </Head>
 
       <nav>
-        {/* Todo: Navbar */}
+        <Navbar />
       </nav>
 
       {/* Todo: Sidebar */}

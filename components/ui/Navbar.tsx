@@ -1,7 +1,7 @@
-import { FunctionComponent } from "react"
-import NextLink from "next/link"
-import { AppBar, Badge, Box, Button, IconButton, Link, Toolbar, Typography } from "@mui/material"
-import { SearchOutlined, ShoppingCartOutlined } from "@mui/icons-material"
+import { FunctionComponent } from 'react'
+import NextLink from 'next/link'
+import { AppBar, Badge, Box, Button, IconButton, Link, Toolbar, Typography } from '@mui/material'
+import { SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material'
 
 export const Navbar: FunctionComponent = () => {
   return (
@@ -16,7 +16,7 @@ export const Navbar: FunctionComponent = () => {
 
         <Box flex={ 1 }/>
 
-        <Box sx={{ display: { xs: 'none', sm: 'block'} }}>
+        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <NextLink href="/category/men" passHref legacyBehavior>
             <Link>
               <Button>

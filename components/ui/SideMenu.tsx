@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react'
 import {
   Box, Divider, Drawer,
   IconButton, Input,
@@ -19,7 +20,7 @@ import {
   VpnKeyOutlined
 } from '@mui/icons-material'
 
-export const SideMenu = () => {
+export const SideMenu: FunctionComponent = () => {
   return (
     <Drawer
         open={ false }

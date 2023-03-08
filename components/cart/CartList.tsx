@@ -19,14 +19,14 @@ export const CartList: FunctionComponent<Props> = ({ editable = false }) => {
     <>
       {
         productsInCart.map(product => (
-          <Grid container spacing={2} sx={{ mb: 1 }}>
+          <Grid container spacing={2} sx={{ mb: 1 }} key={product.slug}>
             <Grid item xs={3}>
               {/* Llevar a la pagina del producto */}
               <NextLink href="/product/slug" passHref legacyBehavior>
                 <Link>
                   <CardActionArea>
                     <CardMedia
-                      image={`products/${product.images[0]}`}
+                      image={`/products/${product.images[0]}`}
                       component="img"
                       sx={{ borderRadius: '5px' }}
                     />

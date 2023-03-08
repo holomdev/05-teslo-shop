@@ -53,7 +53,6 @@ export const Navbar: FunctionComponent = () => {
             </IconButton>
           </Link>
         </NextLink>
-
         <Button>
           Menu
         </Button>
